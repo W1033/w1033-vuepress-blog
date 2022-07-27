@@ -11,5 +11,9 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-mathjax3": "^4.3.1"
   }
 }

@@ -17,7 +17,7 @@ module.exports = {
                     // - false 为默认展开菜单，默认值 true 是折叠菜单
                     collapsable: false,  
                     // - 设置侧边导航自动提取 markdown 文件标题的层级，默认 1 为 h2 层级
-                    sidebarDepth: 1,
+                    sidebarDepth: 3,
                     children: [
                         // - 菜单名称为 "必须 4"，跳转至 `/pages/mathematics-notes/hight-mathematics/必修4.md`
                         {path: ''},
@@ -28,5 +28,10 @@ module.exports = {
                 }
             ]
         }
+    },
+
+    extendMarkdown(md) {
+        // md.use(require('markdown-it'));
+        md.use(require('markdown-it-mathjax3'));
     }
 }
