@@ -4,6 +4,7 @@ module.exports = {
     description: 'Just playing around',
 
     themeConfig: {
+        lastUpdated: '最后更新时间：',
         nav: [
             { text: 'Home', link: '/' },
             { text: '高中数学', link: '/pages/high-school-math/4.md' },
